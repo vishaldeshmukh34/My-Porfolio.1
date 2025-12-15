@@ -1,0 +1,393 @@
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #222;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: #ff0066;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+.drop-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    top: 30px;
+    padding: 10px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.dropdown-content a {
+    display: block;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #000;
+}
+.dropdown-content a:hover {
+    background: #ff006612;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* SOCIAL ICONS */
+.social-icons a {
+    margin-left: 15px;
+    font-size: 18px;
+    color: #444;
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    color: #ff0066;
+}
+
+/* MENU BUTTON */
+.menu-btn {
+    width: 45px;
+    height: 45px;
+    background: #ff0066;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.menu-btn i {
+    color: white;
+    font-size: 20px;
+}
+
+
+
+/* HERO SECTION */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+/* LEFT SIDE */
+.hero-left {
+    width: 50%;
+}
+
+.hello {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ff0066;
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111;
+    margin: 10px 0;
+}
+
+/* Typing Text */
+.typing-text {
+    font-size: 50px;
+    font-weight: 900;
+    color: #ff0066;
+    height: 60px;
+}
+
+#typing {
+    border-right: 3px solid #ff0066;
+    padding-right: 5px;
+}
+
+/* Description */
+.hero-desc {
+    width: 90%;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* BUTTON */
+.hero-btn {
+    display: inline-block;
+    margin-top: 30px;
+    background: #ff0066;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+.hero-btn:hover {
+    background: #d60052;
+    transform: scale(1.05);
+}
+
+/* RIGHT SIDE IMAGE */
+.hero-right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-right img {
+    width: 100%;
+    max-width: 380px;
+    filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.2));
+    animation: floatPhoto 3s ease-in-out infinite;
+}
+
+/* Image Floating Animation */
+@keyframes floatPhoto {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 80px 5%;
+    background: #0A001A;
+    color: white;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #8a2be2, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Project cards */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border-radius: 18px;
+    backdrop-filter: blur(12px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #b45eff;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #d08fff;
+    font-weight: bold;
+}
+
+.bold {
+    color: #e7d7ff;
+    font-weight: bold;
+}
+
+/* Tags */
+.tags {
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.tags span {
+    background: #b45eff20;
+    border: 1px solid #b45eff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #f4d9ff;
+    transition: 0.3s;
+}
+
+.tags span:hover {
+    background: #b45eff;
+    color: black;
+}
+
+/* Buttons */
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.project-btn {
+    padding: 10px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #9d4dff;
+    transition: 0.3s;
+}
+
+.project-btn:hover {
+    background: #9d4dff;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+/* ============================================
+   GLOBAL ANIMATION STYLES (Toastify style)
+   ============================================ */
+
+/* 1. Bounce-In Animation */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounce-in {
+    animation: bounceIn 0.8s ease forwards;
+}
+
+
+/* 2. Slide-Down Animation (Navbar) */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-down {
+    animation: slideDown 0.6s ease forwards;
+}
+
+
+/* 3. Fade-Up Animation (Project Cards) */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+    animation: fadeUp 0.7s ease forwards;
+}
+
+
+/* 4. Glow Hover Animation (Buttons) */
+.glow-btn {
+    transition: 0.3s ease;
+}
+
+.glow-btn:hover {
+    box-shadow: 0 0 15px #7a3ffd, 0 0 40px #7a3ffd;
+    transform: translateY(-3px);
+}
+
+
+/* Optional Smooth Animation for All Elements */
+* {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
